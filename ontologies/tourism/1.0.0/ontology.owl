@@ -1,0 +1,1216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#"
+     xml:base="https://javinavarro64.github.io/uoc-rco/ontologies/tourism"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:tourism="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#">
+    <owl:Ontology rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism">
+        <owl:versionIRI rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism/1.0.0"/>
+        <terms:abstract>Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes.</terms:abstract>
+        <terms:created>2025-04-25</terms:created>
+        <terms:creator>Javier Navarro</terms:creator>
+        <terms:description>El propósito de esta ontología es proporcionar una representación formal y semántica del dominio turístico urbano, facilitando la estructuración, interoperabilidad y análisis de información relacionada con recursos turísticos sobre ciudades, atracciones, eventos, hoteles, restaurantes y medios de transporte.
+
+Una posible aplicación de esta ontología es su integración en un sistema de recomendación turística inteligente. Utilizando la ontología como base de conocimiento, el sistema puede ofrecer sugerencias personalizadas a los usuarios en función de sus preferencias, disponibilidad de eventos, tipo de atracciones deseadas y medios de transporte accesibles. Por ejemplo, un turista que busca actividades culturales en una ciudad determinada puede recibir recomendaciones de museos cercanos, eventos en curso, restaurantes próximos y opciones de transporte público, todo ello gracias a las relaciones semánticas definidas en la ontología.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title>Modelo ontológico para el dominio turístico</terms:title>
+        <vann:preferredNamespacePrefix>tourism</vann:preferredNamespacePrefix>
+        <rdfs:label>Modelo ontológico para el dominio turístico</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <vocab:introduction>Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes.</vocab:introduction>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#introduction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#introduction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn">
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"/>
+        <rdfs:range rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"/>
+        <rdfs:comment>Relaciona un lugar con una ciudad.</rdfs:comment>
+        <rdfs:label>está localizado en</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport -->
+
+
+    <owl:ObjectProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport">
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"/>
+        <rdfs:range rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>Establece la relación entre una empresa y los medios de transporte que oferta.</rdfs:comment>
+        <rdfs:label>oferta el medio de trasnporte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine -->
+
+
+    <owl:ObjectProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine">
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"/>
+        <rdfs:range rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Establece la relación entre un establecimiento de comida y los tipos de cocina que sirve.</rdfs:comment>
+        <rdfs:label>sirve</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"/>
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Establece un valor de valoración de un cliente.</rdfs:comment>
+        <rdfs:label>tiene una valoración de</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"/>
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Establece un valor de precio medio de un establecimiento.</rdfs:comment>
+        <rdfs:label>tiene un precio medio de</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>Establece un valor de fecha de un evento.</rdfs:comment>
+        <rdfs:label>se celebra el</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Establece un valor de coordenadas de localización de un lugar.</rdfs:comment>
+        <rdfs:label>tiene coordenadas de localización</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight">
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Establece un valor de precio por noche para un estblecimiento de alojamientos.</rdfs:comment>
+        <rdfs:label>tiene un precio por noche de</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating -->
+
+
+    <owl:DatatypeProperty rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating">
+        <rdfs:domain rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+        <rdfs:comment>Establece una clasificación de estrellas para un hotel.</rdfs:comment>
+        <rdfs:label>tiene una clasificación de estrellas de</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        <rdfs:comment>Una playa.</rdfs:comment>
+        <rdfs:label>Playa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:comment>Hotel localizado en la costa y cerca de la playa.</rdfs:comment>
+        <rdfs:label>Hotel de playa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:comment>Hotel orientado a dar servicios específicos para empresas.</rdfs:comment>
+        <rdfs:label>Hotel de negocios</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Una ciudad donde hacer turismo.</rdfs:comment>
+        <rdfs:label>Ciudad</rdfs:label>
+        <rdfs:sameAs>https://schema.org/City</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType">
+        <rdfs:comment>Tipo de cocina nacional o internacional que ofrece un establecimiento de comidas.</rdfs:comment>
+        <rdfs:label>Tipo de cocina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        <rdfs:comment>Una localización cultural.</rdfs:comment>
+        <rdfs:label>Cultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:comment>Evento relacionado con la cultura.</rdfs:comment>
+        <rdfs:label>Evento cultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Un evento con potencial turístico.</rdfs:comment>
+        <rdfs:label>Evento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Un negocio relacionado con la restauración.</rdfs:comment>
+        <rdfs:label>Establecimiento de comida</rdfs:label>
+        <rdfs:sameAs>https://schema.org/FoodEstablishment</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:comment>Evento relacionado con la gastronomía.</rdfs:comment>
+        <rdfs:label>Evento gastronómico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Un hotel.</rdfs:comment>
+        <rdfs:label>Hotel</rdfs:label>
+        <rdfs:sameAs>https://schema.org/Hotel</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Un negocio físico como un restaurante o un hotel.</rdfs:comment>
+        <rdfs:label>Negocio local</rdfs:label>
+        <rdfs:sameAs>https://schema.org/LocalBusiness</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Un negocio de alojamiento como un motel o un hotel.</rdfs:comment>
+        <rdfs:label>Negocio de alojamiento</rdfs:label>
+        <rdfs:sameAs>https://schema.org/LodgingBusiness</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:comment>Hotel de lujo. En esta tipología entrarían los hoteles de 5 estrellas.</rdfs:comment>
+        <rdfs:label>Hotel de lujo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation">
+        <rdfs:comment>Un medio de transporte, como el tranvía, el autobus o el tren.</rdfs:comment>
+        <rdfs:label>Medio de transporte</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/MeanOfTransportation</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        <rdfs:comment>Un monumento.</rdfs:comment>
+        <rdfs:label>Monumento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        <rdfs:comment>Un museo.</rdfs:comment>
+        <rdfs:label>Museo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:comment>Evento relacionado con la música.</rdfs:comment>
+        <rdfs:label>Evento musical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        <rdfs:comment>Un parque.</rdfs:comment>
+        <rdfs:label>Parque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Un entidad que tiene una localización fija y una extensión física.</rdfs:comment>
+        <rdfs:label>Lugar</rdfs:label>
+        <rdfs:sameAs>https://schema.org/Place</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment"/>
+        <rdfs:comment>Un restaurante.</rdfs:comment>
+        <rdfs:label>Restaurante</rdfs:label>
+        <rdfs:sameAs>https://schema.org/Restaurant</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:comment>Hotel localizado en un entorno rural.</rdfs:comment>
+        <rdfs:label>Hotel rural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:comment>Evento relacionado con el deporte.</rdfs:comment>
+        <rdfs:label>Evento deportivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+        <rdfs:comment>Evento relacionado con el mundo de la tecnología.</rdfs:comment>
+        <rdfs:label>Evento tecnológico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Una atracción o localización ideal para el turismo.</rdfs:comment>
+        <rdfs:label>Atracción turística</rdfs:label>
+        <rdfs:sameAs>https://schema.org/TouristAttraction</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel">
+        <rdfs:subClassOf rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <rdfs:comment>Hotel especializado en dar servicios a turistas.</rdfs:comment>
+        <rdfs:label>Hotel turístico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness -->
+
+
+    <owl:Class rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport"/>
+                        <owl:someValuesFrom rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Empresa que ofrece servicios de transporte públicos o privados.</rdfs:comment>
+        <rdfs:label>Empresa de transporte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Cocina típica de andalucía.</rdfs:comment>
+        <rdfs:label>Cocina andaluza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>El autobus.</rdfs:comment>
+        <rdfs:label>Autobus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"/>
+        <hasLocationCoordinates>36.5297,-6.2920</hasLocationCoordinates>
+        <rdfs:comment>La provincia de Cádiz, en Andalucía, España.</rdfs:comment>
+        <rdfs:label>Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasCelebrationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-19</hasCelebrationDate>
+        <rdfs:comment>El carnaval de Cádiz.</rdfs:comment>
+        <rdfs:label>Carnaval de Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</hasAssessment>
+        <rdfs:comment>Castillo de Cádiz.</rdfs:comment>
+        <rdfs:label>Castillo de Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasCelebrationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-02</hasCelebrationDate>
+        <rdfs:comment>Congreso de Cádiz.</rdfs:comment>
+        <rdfs:label>Congreso de Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</hasAssessment>
+        <hasPriceNight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</hasPriceNight>
+        <hasStarRating rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">5</hasStarRating>
+        <rdfs:comment>Hotel del Mar ubicado en Cádiz.</rdfs:comment>
+        <rdfs:label>Hotel del Mar de Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</hasAssessment>
+        <hasPriceNight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</hasPriceNight>
+        <hasStarRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</hasStarRating>
+        <rdfs:comment>Hotel Sol ubicado en Cádiz.</rdfs:comment>
+        <rdfs:label>Hotel Sol Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Cocina típica de italia.</rdfs:comment>
+        <rdfs:label>Cocina italiana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Cocina típica japonesa.</rdfs:comment>
+        <rdfs:label>Cocina japonesa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Cocina típica de la zona del mediterráneo.</rdfs:comment>
+        <rdfs:label>Cocina mediterránea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>El metro.</rdfs:comment>
+        <rdfs:label>Metro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"/>
+        <rdfs:comment>Cocina típica de mexico.</rdfs:comment>
+        <rdfs:label>Cocina mexicana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"/>
+        <offersMeanOfTransport rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro"/>
+        <offersMeanOfTransport rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram"/>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.93</hasAveragePrice>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.63</hasAveragePrice>
+        <rdfs:comment>Empresa de transporte ubicada en Cádiz.</rdfs:comment>
+        <rdfs:label>Movi Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</hasAssessment>
+        <rdfs:comment>Una playa de Cádiz.</rdfs:comment>
+        <rdfs:label>Playa de Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>La bicicleta.</rdfs:comment>
+        <rdfs:label>Bicicleta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <servesCuisine rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine"/>
+        <servesCuisine rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</hasAssessment>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</hasAveragePrice>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</hasAveragePrice>
+        <rdfs:comment>Restaurante ubicado en Cádiz.</rdfs:comment>
+        <rdfs:label>Restaurante Delicia Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"/>
+        <isLocatedIn rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+        <servesCuisine rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine"/>
+        <hasAssessment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</hasAssessment>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</hasAveragePrice>
+        <rdfs:comment>Restaurante ubicado en Cádiz.</rdfs:comment>
+        <rdfs:label>Restaurante Gourmet Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>El taxi.</rdfs:comment>
+        <rdfs:label>Taxi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"/>
+        <rdfs:comment>El tranvía.</rdfs:comment>
+        <rdfs:label>Tranvía</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz -->
+
+
+    <owl:NamedIndividual rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz">
+        <rdf:type rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"/>
+        <offersMeanOfTransport rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle"/>
+        <offersMeanOfTransport rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram"/>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.56</hasAveragePrice>
+        <hasAveragePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.65</hasAveragePrice>
+        <rdfs:comment>Empresa de transporte ubicada en Cádiz.</rdfs:comment>
+        <rdfs:label>Trans Cádiz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"/>
+            <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"/>
+            <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"/>
+            <rdf:Description rdf:about="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:label>R2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:label>R1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:label>R3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                        <swrl:argument2 rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

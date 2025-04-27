@@ -1,0 +1,1391 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"
+    }, {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"
+    }, {
+      "@id" : "_:genid34"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"
+    }, {
+      "@id" : "_:genid48"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness"
+    }, {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid57"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid65"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#p"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "100"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid70"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid76"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#equal"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid81"
+    }, {
+      "@id" : "_:genid79"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid83"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"
+    }, {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#equal",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2025-04-25"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Javier Navarro"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "El propósito de esta ontología es proporcionar una representación formal y semántica del dominio turístico urbano, facilitando la estructuración, interoperabilidad y análisis de información relacionada con recursos turísticos sobre ciudades, atracciones, eventos, hoteles, restaurantes y medios de transporte.\n\nUna posible aplicación de esta ontología es su integración en un sistema de recomendación turística inteligente. Utilizando la ontología como base de conocimiento, el sistema puede ofrecer sugerencias personalizadas a los usuarios en función de sus preferencias, disponibilidad de eventos, tipo de atracciones deseadas y medios de transporte accesibles. Por ejemplo, un turista que busca actividades culturales en una ciudad determinada puede recibir recomendaciones de museos cercanos, eventos en curso, restaurantes próximos y opciones de transporte público, todo ello gracias a las relaciones semánticas definidas en la ontología."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Modelo ontológico para el dominio turístico"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "tourism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Modelo ontológico para el dominio turístico"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "https://w3id.org/widoco/vocab#introduction" : [ {
+    "@value" : "Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes."
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocina típica de andalucía."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cocina andaluza"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una playa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Playa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel localizado en la costa y cerca de la playa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel de playa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El autobus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Autobus"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel orientado a dar servicios específicos para empresas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel de negocios"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La provincia de Cádiz, en Andalucía, España."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates" : [ {
+    "@value" : "36.5297,-6.2920"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El carnaval de Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carnaval de Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-19"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Castillo de Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Castillo de Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.4"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una ciudad donde hacer turismo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ciudad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Congreso de Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Congreso de Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-02"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de cocina nacional o internacional que ofrece un establecimiento de comidas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tipo de cocina"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una localización cultural."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evento relacionado con la cultura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un evento con potencial turístico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un negocio relacionado con la restauración."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Establecimiento de comida"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/FoodEstablishment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evento relacionado con la gastronomía."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento gastronómico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un hotel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel del Mar ubicado en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel del Mar de Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.8"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "200"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#byte",
+    "@value" : "5"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel Sol ubicado en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel Sol Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.6"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "99"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocina típica de italia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cocina italiana"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocina típica japonesa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cocina japonesa"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un negocio físico como un restaurante o un hotel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Negocio local"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/LocalBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un negocio de alojamiento como un motel o un hotel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Negocio de alojamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/LodgingBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel de lujo. En esta tipología entrarían los hoteles de 5 estrellas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel de lujo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un medio de transporte, como el tranvía, el autobus o el tren."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medio de transporte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/MeanOfTransportation"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocina típica de la zona del mediterráneo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cocina mediterránea"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El metro."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocina típica de mexico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cocina mexicana"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un monumento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monumento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Empresa de transporte ubicada en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Movi Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.93"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.63"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro"
+  }, {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un museo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evento relacionado con la música."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento musical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un parque."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parque"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un entidad que tiene una localización fija y una extensión física."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lugar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una playa de Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Playa de Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.6"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La bicicleta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bicicleta"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un restaurante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurante ubicado en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Delicia Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.7"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "16"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "26"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine"
+  }, {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurante ubicado en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurante Gourmet Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.3"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "68"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel localizado en un entorno rural."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel rural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evento relacionado con el deporte."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento deportivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El taxi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Taxi"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evento relacionado con el mundo de la tecnología."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evento tecnológico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una atracción o localización ideal para el turismo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Atracción turística"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://schema.org/TouristAttraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel especializado en dar servicios a turistas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel turístico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El tranvía."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tranvía"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Empresa de transporte ubicada en Cádiz."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trans Cádiz"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.56"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.65"
+  } ],
+  "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle"
+  }, {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Empresa que ofrece servicios de transporte públicos o privados."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Empresa de transporte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece un valor de valoración de un cliente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene una valoración de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece un valor de precio medio de un establecimiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene un precio medio de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece un valor de fecha de un evento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "se celebra el"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece un valor de coordenadas de localización de un lugar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene coordenadas de localización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece un valor de precio por noche para un estblecimiento de alojamientos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene un precio por noche de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece una clasificación de estrellas para un hotel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene una clasificación de estrellas de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#byte"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relaciona un lugar con una ciudad."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "está localizado en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece la relación entre una empresa y los medios de transporte que oferta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "oferta el medio de trasnporte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation"
+  } ]
+}, {
+  "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establece la relación entre un establecimiento de comida y los tipos de cocina que sirve."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sirve"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#introduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

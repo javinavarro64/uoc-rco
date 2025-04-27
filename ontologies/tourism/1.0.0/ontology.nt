@@ -1,0 +1,764 @@
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://www.w3.org/2002/07/owl#versionIRI> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism/1.0.0> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/abstract> "Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/created> "2025-04-25" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/creator> "Javier Navarro" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/description> "El propósito de esta ontología es proporcionar una representación formal y semántica del dominio turístico urbano, facilitando la estructuración, interoperabilidad y análisis de información relacionada con recursos turísticos sobre ciudades, atracciones, eventos, hoteles, restaurantes y medios de transporte.\n\nUna posible aplicación de esta ontología es su integración en un sistema de recomendación turística inteligente. Utilizando la ontología como base de conocimiento, el sistema puede ofrecer sugerencias personalizadas a los usuarios en función de sus preferencias, disponibilidad de eventos, tipo de atracciones deseadas y medios de transporte accesibles. Por ejemplo, un turista que busca actividades culturales en una ciudad determinada puede recibir recomendaciones de museos cercanos, eventos en curso, restaurantes próximos y opciones de transporte público, todo ello gracias a las relaciones semánticas definidas en la ontología." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/dc/terms/title> "Modelo ontológico para el dominio turístico" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tourism" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://www.w3.org/2000/01/rdf-schema#label> "Modelo ontológico para el dominio turístico" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism> <https://w3id.org/widoco/vocab#introduction> "Esta ontología busca mejorar la gestión del conocimiento en sistemas turísticos, apoyar la toma de decisiones y permitir el desarrollo de aplicaciones inteligentes que integren información de múltiples fuentes." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#introduction
+<https://w3id.org/widoco/vocab#introduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un lugar con una ciudad." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "está localizado en" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#range> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece la relación entre una empresa y los medios de transporte que oferta." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#label> "oferta el medio de trasnporte" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <http://www.w3.org/2000/01/rdf-schema#range> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece la relación entre un establecimiento de comida y los tipos de cocina que sirve." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "sirve" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece un valor de valoración de un cliente." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "tiene una valoración de" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece un valor de precio medio de un establecimiento." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#label> "tiene un precio medio de" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece un valor de fecha de un evento." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> <http://www.w3.org/2000/01/rdf-schema#label> "se celebra el" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece un valor de coordenadas de localización de un lugar." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> <http://www.w3.org/2000/01/rdf-schema#label> "tiene coordenadas de localización" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece un valor de precio por noche para un estblecimiento de alojamientos." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> <http://www.w3.org/2000/01/rdf-schema#label> "tiene un precio por noche de" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#byte> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece una clasificación de estrellas para un hotel." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> <http://www.w3.org/2000/01/rdf-schema#label> "tiene una clasificación de estrellas de" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach> <http://www.w3.org/2000/01/rdf-schema#comment> "Una playa." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach> <http://www.w3.org/2000/01/rdf-schema#label> "Playa" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel localizado en la costa y cerca de la playa." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel de playa" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel orientado a dar servicios específicos para empresas." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel de negocios" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Una ciudad donde hacer turismo." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> <http://www.w3.org/2000/01/rdf-schema#label> "Ciudad" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/City" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de cocina nacional o internacional que ofrece un establecimiento de comidas." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de cocina" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural> <http://www.w3.org/2000/01/rdf-schema#comment> "Una localización cultural." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cultural> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con la cultura." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Evento cultural" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Un evento con potencial turístico." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Evento" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#comment> "Un negocio relacionado con la restauración." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#label> "Establecimiento de comida" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/FoodEstablishment" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con la gastronomía." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Evento gastronómico" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Un hotel." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/Hotel" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Un negocio físico como un restaurante o un hotel." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "Negocio local" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/LocalBusiness" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Un negocio de alojamiento como un motel o un hotel." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "Negocio de alojamiento" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LodgingBusiness> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/LodgingBusiness" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel de lujo. En esta tipología entrarían los hoteles de 5 estrellas." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel de lujo" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> <http://www.w3.org/2000/01/rdf-schema#comment> "Un medio de transporte, como el tranvía, el autobus o el tren." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> <http://www.w3.org/2000/01/rdf-schema#label> "Medio de transporte" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/MeanOfTransportation" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument> <http://www.w3.org/2000/01/rdf-schema#comment> "Un monumento." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monumento" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum> <http://www.w3.org/2000/01/rdf-schema#comment> "Un museo." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museo" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con la música." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Evento musical" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park> <http://www.w3.org/2000/01/rdf-schema#comment> "Un parque." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Park> <http://www.w3.org/2000/01/rdf-schema#label> "Parque" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Un entidad que tiene una localización fija y una extensión física." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/Place" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#FoodEstablishment> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Un restaurante." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/Restaurant" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel localizado en un entorno rural." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel rural" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con el deporte." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Evento deportivo" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con el mundo de la tecnología." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TechnologicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Evento tecnológico" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Place> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Una atracción o localización ideal para el turismo." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Atracción turística" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://schema.org/TouristAttraction" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel especializado en dar servicios a turistas." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel turístico" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Empresa que ofrece servicios de transporte públicos o privados." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa de transporte" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Cocina típica de andalucía." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#AndalusianCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Cocina andaluza" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "El autobus." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Autobus" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasLocationCoordinates> "36.5297,-6.2920" .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "La provincia de Cádiz, en Andalucía, España." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CulturalEvent> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> "2024-04-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "El carnaval de Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CarnavalCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Carnaval de Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Monument> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "3.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Castillo de Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CastilloCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Castillo de Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MusicEvent> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasCelebrationDate> "2024-06-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Congreso de Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CongresoCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Congreso de Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> "200"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> "5"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel del Mar ubicado en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelDelMarCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel del Mar de Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> "99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel Sol ubicado en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#HotelSolCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Sol Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Cocina típica de italia." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Cocina italiana" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin> <http://www.w3.org/2000/01/rdf-schema#comment> "Cocina típica japonesa." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#JapaneseCuisin> <http://www.w3.org/2000/01/rdf-schema#label> "Cocina japonesa" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Cocina típica de la zona del mediterráneo." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Cocina mediterránea" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro> <http://www.w3.org/2000/01/rdf-schema#comment> "El metro." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#CuisineType> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Cocina típica de mexico." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Cocina mexicana" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Metro> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "2.93"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "4.63"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Empresa de transporte ubicada en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MoviCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Movi Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Beach> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Una playa de Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PlayaCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Playa de Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "La bicicleta." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Bicicleta" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MediterraneanCuisine> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MexicanCuisine> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "16"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "26"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurante ubicado en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteDeliciaCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Delicia Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Restaurant> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#servesCuisine> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#ItalianCuisine> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAssessment> "4.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "68"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurante ubicado en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#RestauranteGourmetCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Cádiz" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi> <http://www.w3.org/2000/01/rdf-schema#comment> "El taxi." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Taxi> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#MeanOfTransportation> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> <http://www.w3.org/2000/01/rdf-schema#comment> "El tranvía." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> <http://www.w3.org/2000/01/rdf-schema#label> "Tranvía" .
+# 
+# https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransportationBusiness> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#PublicBicycle> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#offersMeanOfTransport> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Tram> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "1.56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasAveragePrice> "1.65"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <http://www.w3.org/2000/01/rdf-schema#comment> "Empresa de transporte ubicada en Cádiz." .
+<https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TransCadiz> <http://www.w3.org/2000/01/rdf-schema#label> "Trans Cádiz" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid50 <http://www.w3.org/2002/07/owl#members> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristAttraction> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LocalBusiness> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Event> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#City> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid55 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid55 <http://www.w3.org/2000/01/rdf-schema#label> "R2" .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid55 <http://www.w3.org/2003/11/swrl#body> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#arguments> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#p> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid61 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasPriceNight> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid63 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/2003/11/swrl#head> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid65 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#TouristHotel> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#label> "R1" .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid66 <http://www.w3.org/2003/11/swrl#body> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid68 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#hasStarRating> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#arguments> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+<http://www.w3.org/2003/11/swrlb#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid74 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://www.w3.org/2003/11/swrl#head> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid76 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#LuxuryHotel> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid77 <http://www.w3.org/2000/01/rdf-schema#label> "R3" .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid77 <http://www.w3.org/2003/11/swrl#body> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid79 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Hotel> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/2003/11/swrl#argument2> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#Cadiz> .
+_:genid81 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid81 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#isLocatedIn> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://www.w3.org/2003/11/swrl#head> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid83 <http://www.w3.org/2003/11/swrl#classPredicate> <https://javinavarro64.github.io/uoc-rco/ontologies/tourism#BeachHotel> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
